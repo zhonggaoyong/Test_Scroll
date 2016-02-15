@@ -16,7 +16,7 @@ public class ScrollViewGroup extends ViewGroup {
 	/**
 	 * 判定为拖动的最小移动像素数
 	 */
-//	private int mTouchSlop;
+	private int mTouchSlop;
 	/**
 	 * 界面可滚动的左边界
 	 */
@@ -34,7 +34,7 @@ public class ScrollViewGroup extends ViewGroup {
 		super(context, attrs);
 		ViewConfiguration configuration = ViewConfiguration.get(context);
 		// 获取TouchSlop值
-//		mTouchSlop = ViewConfigurationCompat.getScaledPagingTouchSlop(configuration);
+		mTouchSlop = ViewConfigurationCompat.getScaledPagingTouchSlop(configuration);
 		mScroller = new Scroller(context);
 		// TODO Auto-generated constructor stub
 	}
